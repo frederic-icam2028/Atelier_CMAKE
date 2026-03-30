@@ -42,7 +42,7 @@ jobs:
             cmake ..
             make
             ./src/calculator sub 3 -2
-    Test_Mul:
+  Test_Mul:
       runs-on: ubuntu-latest
       needs: Compilation
       steps:
@@ -55,7 +55,7 @@ jobs:
             cmake ..
             make
             ./src/calculator mul 5 5
-    Test_Div:
+  Test_Div:
       runs-on: ubuntu-latest
       needs: Compilation
       steps:
@@ -68,7 +68,7 @@ jobs:
             cmake ..
             make
             ./src/calculator div 1 5
-    Test_Car:
+  Test_Car:
       runs-on: ubuntu-latest
       needs: Compilation
       steps:
